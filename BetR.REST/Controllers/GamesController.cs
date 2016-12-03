@@ -64,7 +64,7 @@ namespace BetR.REST.Controllers
                     EventDate = GameTime,
                     OverAdjust = Over,
                     UnderAdjust = Under,
-                    TotalPoints = ""
+                    TotalPoints = Under
                 });
 
             }
