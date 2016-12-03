@@ -81,13 +81,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Event.cs" />
-    <Compile Include="Models\MoneyLine.cs" />
-    <Compile Include="Models\Participant.cs" />
-    <Compile Include="Models\Period.cs" />
-    <Compile Include="Models\PinnacleLineFeed.cs" />
-    <Compile Include="Models\Spread.cs" />
-    <Compile Include="Models\Total.cs" />
+    <Compile Include="Models\SportsBookModels.cs" />
+    <Compile Include="Models\SportsBookRSS.cs" />
     <Compile Include="Models\XMLParse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
