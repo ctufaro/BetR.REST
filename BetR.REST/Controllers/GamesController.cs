@@ -47,10 +47,10 @@ namespace BetR.REST.Controllers
                 {
                     AwayMoneyLine = GetHTML(rawRSS[2]);
                     HomeMoneyLine = GetHTML(rawRSS[4]);
-                    AwaySpread = GetHTML(rawRSS[1]);
-                    HomeSpread = GetHTML(rawRSS[3]);
-                    Over = GetHTML(rawRSS[5]);
-                    Under = GetHTML(rawRSS[6]);
+                    AwaySpread = GetHTML(rawRSS[1]).Split(new char[]{' '})[0].Trim();
+                    HomeSpread = GetHTML(rawRSS[3]).Split(new char[] { ' ' })[0].Trim();
+                    Over = GetHTML(rawRSS[5]).Split(new char[] { ' ' })[1].Trim();
+                    Under = GetHTML(rawRSS[6]).Split(new char[] { ' ' })[1].Trim();
                 }
 
                 sBook.SportsBookMain.Add(new SportsBookItem
